@@ -168,3 +168,9 @@ h1 {
   font-size: 1.05rem;
   text-align: justify;
 }
+
+/* Button link styling */
+button a {
+  color: white; /* Set the text color to white */
+  text-decoration: none; /* Remove the underline */
+}
