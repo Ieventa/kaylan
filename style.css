@@ -6,18 +6,68 @@ body {
   padding: 0;
 }
 
+/* Header Styling */
 header {
-  background-color: #2c3e50; /* Darker background for the header */
+  background-color: #2c3e50;
   padding: 20px;
   text-align: center;
+  position: relative;
 }
 
-header h1 {
-  color: #ecf0f1; /* Light grayish-white text */
-  font-size: 2.5em;
-  margin: 0;
-  text-align: center;
+/* Dropdown container */
+.dropdown {
+  display: inline-block;
+  position: relative;
 }
+
+/* Dropdown button */
+.dropbtn {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  font-size: 1.5em;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Links inside dropdown */
+.dropdown-content a {
+  color: #2c3e50;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-weight: 500;
+}
+
+/* Hover effects */
+.dropdown-content a:hover {
+  background-color: #ecf0f1;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: pointer change */
+.dropdown:hover .dropbtn {
+  color: #bdc3c7;
+}
+
 
 .container {
   width: 70%;
