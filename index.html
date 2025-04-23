@@ -6,55 +6,80 @@
   <title>Composition II Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<header>
-  <nav class="navbar">
-    <a href="index.html" class="nav-link">Home</a>
-
-    <div class="dropdown">
-      <button class="dropbtn">Course Outcomes ▾</button>
-      <div class="dropdown-content">
-        <a href="#outcome1">Generating Inquiry</a>
-        <a href="#outcome2">Multiple Ways of Writing</a>
-        <a href="#outcome3">Information Literacy</a>
-        <a href="#outcome4">Research Genre Production</a>
-        <a href="#outcome5">Contributing Knowledge</a>
-        <a href="#outcome6">Revision</a>
-      </div>
-    </div>
-
-    <a href="about.html" class="nav-link">About</a>
-  </nav>
-
-  <h1 class="title">ENC 1102 Composition II</h1>
-  <h2 class="subtitle">Kayla Nguyen</h2>
-</header>
-
 
 <body>
-  <div class="container">
-      <h1>e-Portfolio</h1>
-      <p>Welcome to my Composition II portfolio! This portfolio showcases my work and progress throughout the course. Below are the course outcomes that I have focused on during this semester.</p>
-      <h1>Course Outcomes</h1>
-      <div class="buttons-container">
-          <div class="button-container">
-              <button class="button">Generating Inquiry</button>
-          </div>
-          <div class="button-container">
-              <button class="button">Multiple Ways of Writing</button>
-          </div>
-          <div class="button-container">
-              <button class="button">Information Literacy</button>
-          </div>
-          <div class="button-container">
-              <button class="button">Research Genre Production</button>
-          </div>
-          <div class="button-container">
-              <button class="button">Contributing Knowledge</button>
-          </div>
-          <div class="button-container">
-              <button class="button">Revision</button>
-          </div>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-link">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Course Outcomes ▾</button>
+        <div class="dropdown-content">
+          <a href="#outcome1">Generating Inquiry</a>
+          <a href="#outcome2">Multiple Ways of Writing</a>
+          <a href="#outcome3">Information Literacy</a>
+          <a href="#outcome4">Research Genre Production</a>
+          <a href="#outcome5">Contributing Knowledge</a>
+          <a href="#outcome6">Revision</a>
+        </div>
       </div>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+    <h1 class="title">ENC 1102 Composition II</h1>
+    <h2 class="subtitle">Kayla Nguyen</h2>
+  </header>
+
+  <div class="container">
+    <h1>e-Portfolio</h1>
+    <p>Welcome to my Composition II portfolio! This portfolio showcases my work and progress throughout the course. Below are the course outcomes that I have focused on during this semester.</p>
+    
+    <h1>Course Outcomes</h1>
+    <div class="buttons-container">
+      <div class="button-container"><button class="button">Generating Inquiry</button></div>
+      <div class="button-container"><button class="button">Multiple Ways of Writing</button></div>
+      <div class="button-container"><button class="button">Information Literacy</button></div>
+      <div class="button-container"><button class="button">Research Genre Production</button></div>
+      <div class="button-container"><button class="button">Contributing Knowledge</button></div>
+      <div class="button-container"><button class="button">Revision</button></div>
+    </div>
+
+    <div id="course-outcomes-content">
+      <div id="outcome1" class="outcome-section" style="display:none;">
+        <h2>Generating Inquiry</h2>
+        <p>[Your reflection goes here]</p>
+      </div>
+      <div id="outcome2" class="outcome-section" style="display:none;">
+        <h2>Multiple Ways of Writing</h2>
+        <p>[Your reflection goes here]</p>
+      </div>
+      <div id="outcome3" class="outcome-section" style="display:none;">
+        <h2>Information Literacy</h2>
+        <p>[Your reflection goes here]</p>
+      </div>
+      <div id="outcome4" class="outcome-section" style="display:none;">
+        <h2>Research Genre Production</h2>
+        <p>[Your reflection goes here]</p>
+      </div>
+      <div id="outcome5" class="outcome-section" style="display:none;">
+        <h2>Contributing Knowledge</h2>
+        <p>[Your reflection goes here]</p>
+      </div>
+      <div id="outcome6" class="outcome-section" style="display:none;">
+        <h2>Revision</h2>
+        <p>[Your reflection goes here]</p>
+      </div>
+    </div>
   </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.button');
+    const sections = document.querySelectorAll('.outcome-section');
+
+    buttons.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        sections.forEach(sec => sec.style.display = 'none');
+        document.getElementById(`outcome${index + 1}`).style.display = 'block';
+      });
+    });
+  </script>
 </body>
 </html>
