@@ -26,8 +26,15 @@ header {
 
 /* Title below nav */
 .title {
-  font-size: 2em;
+  color: #f9c74f; /* golden yellow, looks vibrant & clean */
+  font-size: 2.5em;
   margin: 0;
+}
+
+.subtitle {
+  color: #90e0ef; /* soft pastel blue */
+  font-size: 1.2em;
+  margin-top: 5px;
 }
 
 /* Nav links */
