@@ -72,12 +72,23 @@
 
   <script>
     const buttons = document.querySelectorAll('.button');
+    const links = document.querySelectorAll('.dropdown-content a');
     const sections = document.querySelectorAll('.outcome-section');
 
+    function showSection(index) {
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(`outcome${index + 1}`).style.display = 'block';
+      window.scrollTo({ top: document.getElementById(`outcome${index + 1}`).offsetTop, behavior: 'smooth' });
+    }
+
     buttons.forEach((btn, index) => {
-      btn.addEventListener('click', () => {
-        sections.forEach(sec => sec.style.display = 'none');
-        document.getElementById(`outcome${index + 1}`).style.display = 'block';
+      btn.addEventListener('click', () => showSection(index));
+    });
+
+    links.forEach((link, index) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        showSection(index);
       });
     });
   </script>
