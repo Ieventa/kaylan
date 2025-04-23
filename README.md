@@ -1,5 +1,4 @@
-# kaylan
-Kayla Nguyen's ENC 1102 e-Portfolio
+# Kayla Nguyen's ENC 1102 e-Portfolio
 
 Welcome to my Composition II e-portfolio! This site showcases my work, skills, and accomplishments. 
 
