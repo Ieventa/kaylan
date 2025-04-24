@@ -174,3 +174,13 @@ button a {
   color: white; /* Set the text color to white */
   text-decoration: none; /* Remove the underline */
 }
+
+.outcome-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
