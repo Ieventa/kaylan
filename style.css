@@ -192,6 +192,40 @@ button a {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.page-intro {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.outcome-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.outcome-subtitle {
+  font-size: 1.15rem;
+  color: #555;
+  font-style: italic;
+}
+
+.outcome-img {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+}
+
+.assignment {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+
 /* Assignment block style */
 .assignment-block {
   margin-bottom: 3rem;
