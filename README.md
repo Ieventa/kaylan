@@ -11,8 +11,6 @@ Hi there! I'm Kayla Nguyen, a passionate student and creator. This portfolio inc
 
 ## Technologies I Use
 - HTML/CSS
-- JavaScript
-- Python (for personal projects)
 - Git/GitHub (for version control)
 
 ## How to Navigate
@@ -21,6 +19,10 @@ Hi there! I'm Kayla Nguyen, a passionate student and creator. This portfolio inc
 
 ## Acknowledgments
 I would like to thank my professors, mentors, and peers who have supported me along the way. This portfolio is a reflection of the knowledge I’ve gained from them, and I’m excited to share it with you!
+
+
+## Image Credits
+Generating Inquiry Header Image: "Question Mark on Crumpled Paper" by Leelo The First (https://images.pexels.com/photos/5428826/pexels-photo-5428826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
 
 ---
 
